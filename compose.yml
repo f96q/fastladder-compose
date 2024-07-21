@@ -8,8 +8,7 @@ services:
     volumes:
       - ./postgres:/var/lib/postgresql/data
   app:
-    build:
-      context: ./
+    image: ghcr.io/f96q/fastladder
     depends_on:
       - db
     ports:
